@@ -2,7 +2,8 @@
 
 This is a high level Node.js web scraping API using Puppeteer and Express.js. It allows you to retrieve a list of URLs from a given starting URL and scrape data from each URL in the list. The scraped data includes the page title and cleaned text content. It can bypass almost any blocker.
 
-- Remember this is only for educational purpose and should only be used for educational purpose.
+> **Note**
+> Remember this is only for educational purpose and should only be used for educational purpose.
 
 It is built using the following technologies:
 
@@ -11,6 +12,24 @@ It is built using the following technologies:
 * [Puppeteer](https://pptr.dev/)
 * [Puppeteer-extra](https://github.com/berstend/puppeteer-extra)
 * [Puppeteer-extra-plugin-stealth](https://github.com/berstend/puppeteer-extra-plugin-stealth)
+
+## Table of Contents
+
+- [Prerequisites](#prerequisites)
+- [API Endpoints](#api-endpoints)
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Start the server](#start-the-server)
+  - [Get List of URLs](#get-list-of-urls)
+    - [Using Python](#using-python)
+    - [Using JavaScript (Node.js)](#using-javascript-nodejs)
+  - [Scrape Data from URLs](#scrape-data-from-urls)
+    - [Using Python](#using-python-1)
+    - [Using JavaScript (Node.js)](#using-javascript-nodejs-1)
+- [Error Handling](#error-handling)
+- [CORS Configuration](#cors-configuration)
+- [Dependencies](#dependencies)
+- [License](#license)
 
 ## Prerequisites
 Before using this API, make sure you have the following prerequisites installed:
