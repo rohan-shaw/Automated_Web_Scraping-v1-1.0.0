@@ -2,6 +2,14 @@
 
 This is a high level Node.js web scraping API using Puppeteer and Express.js. It allows you to retrieve a list of URLs from a given starting URL and scrape data from each URL in the list. The scraped data includes the page title and cleaned text content. It can bypass almost any blocker.
 
+<br/>
+
+<div id="summary" align="center">
+  <img src=https://user-images.githubusercontent.com/10379601/29446482-04f7036a-841f-11e7-9872-91d1fc2ea683.png title="TinyLlama" width=20% />
+</div>
+
+<br/>
+
 > **Note**
 > Remember this is only for educational purpose and should only be used for educational purpose.
 
