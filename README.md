@@ -1,17 +1,8 @@
-# Automated_Web_Scraping-v1-1.0.0
+ # Web Scraper
 
 This is a high level Node.js web scraping API using Puppeteer and Express.js. It allows you to retrieve a list of URLs from a given starting URL and scrape data from each URL in the list. The scraped data includes the page title and cleaned text content. It can bypass almost any blocker.
 
-<br/>
-
-<div id="summary" align="center">
-  <img src=https://user-images.githubusercontent.com/10379601/29446482-04f7036a-841f-11e7-9872-91d1fc2ea683.png title="TinyLlama" width=20% />
-</div>
-
-<br/>
-
-> **Note**
-> Remember this is only for educational purpose and should only be used for educational purpose.
+- Remember this is only for educational purpose and should only be used for educational purpose.
 
 It is built using the following technologies:
 
@@ -20,24 +11,6 @@ It is built using the following technologies:
 * [Puppeteer](https://pptr.dev/)
 * [Puppeteer-extra](https://github.com/berstend/puppeteer-extra)
 * [Puppeteer-extra-plugin-stealth](https://github.com/berstend/puppeteer-extra-plugin-stealth)
-
-## Table of Contents
-
-- [Prerequisites](#prerequisites)
-- [API Endpoints](#api-endpoints)
-- [Installation](#installation)
-- [Usage](#usage)
-  - [Start the server](#start-the-server)
-  - [Get List of URLs](#get-list-of-urls)
-    - [Using Python](#using-python)
-    - [Using JavaScript (Node.js)](#using-javascript-nodejs)
-  - [Scrape Data from URLs](#scrape-data-from-urls)
-    - [Using Python](#using-python-1)
-    - [Using JavaScript (Node.js)](#using-javascript-nodejs-1)
-- [Error Handling](#error-handling)
-- [CORS Configuration](#cors-configuration)
-- [Dependencies](#dependencies)
-- [License](#license)
 
 ## Prerequisites
 Before using this API, make sure you have the following prerequisites installed:
@@ -84,7 +57,7 @@ To use the web scraper, first start the server by running the following command:
 ```
 npm start
 ```
-- The server will listen on port 3000 by default.
+- The server will listen on port 4000 by default.
 
 ## Get List of URLs
 
@@ -95,7 +68,7 @@ You can retrieve a list of URLs from a starting URL by making a GET request to t
 ```bash
 GET /urls?url=https://example.com
 ```
-Replace https://example.com with your desired starting URL.
+- Replace https://example.com with your desired starting URL.
 
 * Response
 
@@ -111,7 +84,7 @@ Sending GET Requests to Retrieve URLs
 import requests
 
 # Replace with the URL of the API server
-api_url = 'http://localhost:3000/urls'
+api_url = 'http://localhost:4000/urls'
 
 # Define the starting URL
 starting_url = 'https://example.com'
@@ -129,7 +102,7 @@ else:
     print(f"Failed to retrieve URLs. Status code: {response.status_code}")
 ```
 
-- Replace `'http://localhost:3000'` with the actual URL where your API server is running.
+- Replace `'http://localhost:4000'` with the actual URL where your API server is running.
 
 #### Using JavaScript (Node.js)
 
@@ -141,7 +114,7 @@ Sending GET Requests to Retrieve URLs
 const axios = require('axios');
 
 // Replace with the URL of the API server
-const apiURL = 'http://localhost:3000/urls';
+const apiURL = 'http://localhost:4000/urls';
 
 // Define the starting URL
 const startingURL = 'https://example.com';
@@ -160,7 +133,7 @@ axios.get(apiURL, { params: { url: startingURL } })
   });
 ```
 
-- Replace `'http://localhost:3000'` with the actual URL where your API server is running.
+- Replace `'http://localhost:4000'` with the actual URL where your API server is running.
 
 ### Scrape Data from URLs
 
@@ -179,7 +152,7 @@ Content-Type: application/json
   ]
 }
 ```
-Replace the example URLs in the "urls" array with the URLs you want to scrape.
+- Replace the example URLs in the "urls" array with the URLs you want to scrape.
 
 * Response
 
@@ -195,7 +168,7 @@ Sending POST Requests to Scrape Data
 import requests
 
 # Replace with the URL of the API server
-api_url = 'http://localhost:3000/scrape'
+api_url = 'http://localhost:4000/scrape'
 
 # Define the list of URLs to scrape
 urls_to_scrape = [
@@ -222,7 +195,7 @@ else:
     print(f"Failed to scrape data. Status code: {response.status_code}")
 ```
 
-- Replace `'http://localhost:3000'` with the actual URL where your API server is running.
+- Replace `'http://localhost:4000'` with the actual URL where your API server is running.
 
 #### Using JavaScript (Node.js)
 
@@ -234,7 +207,7 @@ Sending POST Requests to Scrape Data
 const axios = require('axios');
 
 // Replace with the URL of the API server
-const apiURL = 'http://localhost:3000/scrape';
+const apiURL = 'http://localhost:4000/scrape';
 
 // Define the list of URLs to scrape
 const urlsToScrape = [
@@ -262,7 +235,7 @@ axios.post(apiURL, payload)
   });
 ```
 
-- Replace `'http://localhost:3000'` with the actual URL where your API server is running.
+- Replace `'http://localhost:4000'` with the actual URL where your API server is running.
 
 
 ## Error Handling
